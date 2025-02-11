@@ -1,0 +1,21 @@
+1. What are default Methods in Interfaces
+   -> So , until java 7 we have interfaces where we can only write abstract methods
+   -> But , Java 8 version will allow default methods and static methods in interfaces
+   -> we can define any number of default methods in interfaces
+   -> Can we override an default method?
+      - Yes (Inside our own implemented classes)
+   -> We can access default methods from mutlipul interfaces
+   -> When interfaces having same method signature(method name) how class object decide which method has to executed?
+      - We will get an compile time error in that situation
+      - Solution : Override same method in our class Implementation also
+      - Than use (InterfaceName).super.methodName();
+   -> Cannot be overridden by implementing classes.
+
+2. What are static methods in Interfaces
+   -> So , until java 7 we have interfaces where we can only write abstract methods
+   -> We can define any number of the static methods in an interface
+   -> Unlike default methods , for static methods we can not call the static method by using the implemented class object
+      - because static methods particularly not belongs to any Objects.
+   -> To access the static methods we need to use the respective interface names
+
+* There are lots of defaults methods are adding in interfaces like list , sets etc.
