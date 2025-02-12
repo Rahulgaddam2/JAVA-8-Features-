@@ -1,0 +1,35 @@
+Method References:
+
+1. Method references are the special type of Lambda expressions
+2. When to Use Method References?
+   -> A lambda expression calls a method that already exists.
+   -> The method signature matches the functional interface method.
+   -> The method does not require additional logic before execution.
+3. use :: for Method Reference Delimiter
+   -> syntax :  Class Name / Instance reference :: existing method name;
+
+4. There are 4 types of method references
+   1. Reference to Static Methods
+   2. Reference to instance Methods
+   3. Reference to instance Methods of arbitrary Object of given type
+   4. Reference to the Contructors
+
+5. Reference to Static Methods
+   -> ClassName::MethodName;
+   -> The method which is referred should be matched to method signature of functional Interface abstract method
+
+6. Reference to Instance Methods
+   -> if a method is non-static method that its called instance method
+   -> so , if we want to use method reference we need to create an object of the class where the abstract method is present
+   -> ObjectName::MethodName
+   -> if can also use class name to use method reference but with conditions
+      - the method should not have any args
+      - and the method data type and the abstract data type should be same
+      - than we can use ClassName::MethodName;
+
+7. Reference to instance Methods of arbitrary Object of given type
+   -> What is the meaning of arbitrary objects?
+      - An instance of a class that Java provides dynamically during execution.
+      - Uses ClassName::instanceMethod syntax.
+      - Arrays.sort(names, String::compareToIgnoreCase);
+      - make sure abstract method parameters are same as constructor parameters
