@@ -17,4 +17,6 @@ public class Implementation2 implements DefaultInterface, DefaultInterface2 {
     }
 
 
+
+
 }

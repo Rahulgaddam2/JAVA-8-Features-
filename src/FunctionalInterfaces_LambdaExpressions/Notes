@@ -1,0 +1,26 @@
+Functionals Interfaces and Lambda Expressions:
+
+1. Functionals Interfaces:
+   -> Interfaces : we can write n number of abstract methods & n number of default and static methods in interfaces
+   -> Functionals Interface : An interface which contains only one abstract method is called functional interface (But we can add n number of default and static methods in functional interface)
+      - Functionals Interfaces can also be called as SAM(Single Abstract Method)
+      - Annotation for functional interface is @FunctionalInterface
+
+2. Lambda Expressions
+   -> Implementing single abstract method of functional interface
+   Syntaxes:
+   -> Methods with parameters : > 1
+      - (parameter names) -> {
+               code block (any number of lines)
+         };
+   -> Methods with no parameters : = 0
+      - () - > {
+               code block (any number of lines)
+      }
+
+   -> If there is only one line of code we do not need to provide the {};
+   -> we can not execute default methods and static methods by using lambda expressions
+   -> Functional Interface can be extended with other interface but the other interface should not contains any abstract methods (it can contain default and static methods)
+
+3. Pre defined functional Interfaces
+   -> refer to java 8 api in google (https://docs.oracle.com/javase/8/docs/api/)
