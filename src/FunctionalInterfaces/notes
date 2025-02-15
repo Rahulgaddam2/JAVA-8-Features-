@@ -1,0 +1,35 @@
+Predefined Functional Interfaces:
+
+1. Package
+   -> package created by java in java 8 : java.util.function (All the predefined functional interfaces are present in this package)
+2. Four important Functional Interface
+   -> Function
+   -> Predicate
+   -> Consumer
+   -> Supplier
+
+3. Function (Function Functional Interface)
+   -> This interface has one abstract method called apply
+   -> Syntax
+      - R apply(T t) {R representing return value , T representing input type value }
+   -> we have some defaults methods in function interface
+      - andThen (Function<? super R,? extends V> after)
+      - compose(Function<? super V,? extends T> before)
+      - identity() - this is used when we need an function but we should not change it
+
+4. Predicate (functional Interface)
+   -> Predicate means condition
+   -> This interface has one abstract method called test
+   -> Syntax
+      - test(T t) - return type is boolean
+   -> we have some defaults methods in function interface
+      - and  - its like operators all these three
+      - negate
+      - or
+5. consumer (functional interface)
+   -> This interface takes an input but it wont return any output (return type is void)
+   -> it also as an default method called andThen
+
+6. Supplier (functional interface)
+   -> This interface wont take any inputs (zero arguments)
+   -> it as one abstract class called get();

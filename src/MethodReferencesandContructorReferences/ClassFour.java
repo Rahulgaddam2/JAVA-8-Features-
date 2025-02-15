@@ -36,7 +36,7 @@ public class ClassFour {
 
         // example with single parameter constructor
 
-        GetEmployeeInstanceTwo employeeTwo = Employee::new;
+        GetEmployeeInstanceTwo employeeTwo = Employee::new; // we have to use "new" keyword
         Employee emp2 = employeeTwo.getEmployeeTwo(4);
 
         System.out.println(emp2.getID());
