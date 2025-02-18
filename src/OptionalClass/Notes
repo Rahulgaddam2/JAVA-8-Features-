@@ -1,0 +1,16 @@
+Optional<T> Class
+
+1. Why Optional class?
+   -> With the use of Optional class we can prevent null pointer exception
+   -> we can reduce boiler Plate code
+      - if(object != null){
+            logic
+      }
+   -> A container object which may or may not contain a non-null value
+   -> An Optional class should not contain null value
+   -> There are static methods and non-static methods in Optional Class
+   -> we have of() method to keep the element in the container
+   -> We have isPresent() method in Optional Class to verify if an element is present or not in the Optional Container
+   -> We have get() method where we can extract the element (if its present in container) from the container
+   -> we have empty() method is the value is null
+
